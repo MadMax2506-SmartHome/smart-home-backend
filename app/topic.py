@@ -1,6 +1,6 @@
 from paho.mqtt.client import MQTTMessage
 
-from mqtt import Mqtt
+from app.mqtt import Mqtt
 
 
 class Topic:
@@ -29,7 +29,7 @@ class Topic:
         def on_message(client, userdata, msg: MQTTMessage):
             payload = msg.payload
             parsed_payload = (payload if self._parse_message is None else self._parse_message(payload))
-            print(parsed_payload)
+
             self._subscribed_messages = self._update_received_messages(self._subscribed_messages, parsed_payload)
 
         topic = f"status/{self._topic_prefix}"
