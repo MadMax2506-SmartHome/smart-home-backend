@@ -1,0 +1,9 @@
+version: "3"
+services:
+  server:
+    container_name: smart-home-backend
+    image: 192.168.178.150:8811/smart-home-backend
+    env_file:
+      - ../.env
+    ports:
+      - 3000:80
