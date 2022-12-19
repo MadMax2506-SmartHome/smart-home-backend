@@ -18,4 +18,6 @@ uvicorn main:app --reload
 
 ```bash
 bash .scriptbox/build-docker.sh
+cd .docker
+docker-compose up
 ```
