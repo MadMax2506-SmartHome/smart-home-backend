@@ -21,3 +21,5 @@ bash .scriptbox/build-docker.sh
 cd .docker
 docker-compose up
 ```
+
+IMPORTANT: If you want to run the image on a raspberry pi you need to build it on a raspberry pi.
