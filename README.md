@@ -8,8 +8,8 @@
 ## Setup
 
 ```bash
-git clone https://github.com/MadMax2506/smarthome-backend.git smarthome-backend
-cd smarthome-backend
+git clone https://github.com/MadMax2506/smart-home-backend.git smart-home-backend
+cd smart-home-backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
